@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aquamarine;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #605e5e;
+    padding: 50px 20px;
+}
+
+/*---------------
+ menu bar css
+-----------------*/
+.menu__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*-------------
+ humburger css
+---------------*/
+.humburger{
+display: none;
+cursor: pointer;
+}
+.bar1, .bar2, .bar3{
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    margin: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 20px;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.search__bar input{
+    outline: none;
+    padding: 10px 7px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+}
+.search__btn{
+    padding: 10px 7px;
+    font-size: 18px;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+
+/*----------
+ table css
+------------*/
+
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+th{
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+
+}
+
+ tbody td {
+border: 1px solid #333;
+    padding: 10px !important;
+      color: #fff;
+}
+tbody tr:nth-child(even) {
+    background-color: #766e6e;
+    color: #000;
+}
+tbody tr:hover{
+    background-color: #766e6e;
+    transition: .2s;   
+}
+
+
+
+/*-----------------
+ responsive css 
+-------------------*/
+
+@media(max-width:991px){
+.humburger{
+    display: block;
+    transition: .5s;
+}
+.menu{
+    display: none;
+}
+}
